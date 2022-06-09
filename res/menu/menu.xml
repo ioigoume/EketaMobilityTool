@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/itemMenu"
+        android:icon="@android:drawable/ic_menu_preferences"
+        android:title="@string/title_activity_Preference">
+    </item>
+    <item
+        android:id="@+id/itemService"
+        android:icon="@android:drawable/ic_media_play"
+        android:title="@string/stringTitleStartService">
+    </item>
+    <item
+        android:id="@+id/itemPlot"
+        android:icon="@android:drawable/ic_menu_crop"
+        android:title="@string/title_Plot">
+    </item>
+    
+    <item
+        android:id="@+id/itemGoogleMap"
+        android:icon="@android:drawable/ic_menu_mapmode"
+        android:title="@string/str_title_googleMap">
+    </item>
+    <item
+        android:id="@+id/itemRealTimeList"
+        android:icon="@android:drawable/ic_menu_sort_by_size"
+        android:title="@string/str_title_itemRealTimeList">
+    </item>
+    <item
+        android:id="@+id/itemGridDB"
+        android:icon="@android:drawable/ic_menu_gallery"
+        android:title="@string/str_title_GridDB">
+    </item>
+    <item
+        android:id="@+id/itemPushToServer"
+        android:icon="@android:drawable/ic_menu_set_as"
+        android:title="@string/title_send_all_db_to_server">
+    </item>
+	<item
+        android:id="@+id/itemExtractToSD"
+        android:icon="@android:drawable/ic_menu_set_as"
+        android:title="@string/title_ExtractDB">
+    </item>
+    <item
+        android:id="@+id/itemDelDatabaseContent"
+        android:icon="@android:drawable/ic_notification_clear_all"
+        android:title="@string/stringDeleteDatabaseContentItem">
+    </item>
+    <item
+        android:id="@+id/itemConsoleMonitor"
+        android:icon="@android:drawable/ic_menu_edit"
+        android:title="@string/title_ConsoleMonitor">
+    </item>
+    
+</menu>

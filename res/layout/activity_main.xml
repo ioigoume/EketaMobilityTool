@@ -1,0 +1,16 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/intro_bgnd_color"
+    android:orientation="horizontal" >
+
+    <ImageView
+        android:id="@+id/intro_logo"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/intro"
+        android:contentDescription="@string/title_intro_logo" />
+
+</LinearLayout>

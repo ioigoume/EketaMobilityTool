@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:gravity="center"
+    android:weightSum="100"
+    android:orientation="vertical" >
+
+    <TableRow
+        android:id="@+id/tableRowStatus1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="25" >
+
+        <ImageButton
+            android:id="@+id/imageGpsState"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@color/black"
+            android:contentDescription="@string/gps_state_indicator"
+            android:src="@drawable/gps_red_150_150" />
+
+        <ImageButton
+            android:id="@+id/imageWifiState"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@color/black"
+            android:contentDescription="@string/wifi_state_indicator"
+            android:src="@drawable/wifi_red_150_150" />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRowStatus2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="25" >
+
+        <ImageButton
+            android:id="@+id/imagePhoneState"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@color/black"
+            android:contentDescription="@string/phone_state_indicator"
+            android:src="@drawable/state_red_150_150" />
+
+        <ImageButton
+            android:id="@+id/imageGGState"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@color/black"
+            android:contentDescription="@string/gg_state_indicator"
+            android:src="@drawable/question_mark_blue_150_150" />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRowStatus3"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="25" >
+
+        <ImageButton
+            android:id="@+id/imageOperatorState"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@color/black"
+            android:contentDescription="@string/phone_state_indicator"
+            android:src="@drawable/question_mark_blue_150_150" />
+
+        <ImageButton
+            android:id="@+id/imageServerState"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@color/black"
+            android:contentDescription="@string/gg_state_indicator"
+            android:src="@drawable/server_off_150_150" />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRowStatus4"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="25" >
+
+        <ImageButton
+            android:id="@+id/imageDataNetStatus"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@color/black"
+            android:contentDescription="@string/data_state_indicator"
+            android:src="@drawable/gg_data_red_150_150" />
+
+        <ImageButton
+            android:id="@+id/imageNitlabInfo"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@color/black"
+            android:contentDescription="@string/nitlab_info"
+            android:src="@drawable/nitlab" />
+
+    </TableRow>
+</TableLayout>

@@ -1,0 +1,154 @@
+<resources>
+
+    <!-- ACTIVITY - ACTIVITY - ACTIVITY -->
+    <!-- TITLES -->
+    <string name="title_Service_String">Sampling Service</string>
+    <string name="title_activity_toast">Pin Info</string>
+    <string name="title_activity_listclass">Pin Info</string>
+    <string name="title_activity_main">Mobility Nitlab</string>
+    <string name="title_intro_logo">NitLab Logo</string>
+    <string name="title_app_str">Mobility Monitor</string>
+    <string name="title_activity_about">AboutActivity</string>
+    <string name="title_activity_map_view">Google Map</string>
+    <string name="title_activity_Preference">Preferences</string>
+    <string name="title_activity_chart">Plot Engine</string>
+    <string name="stringBackgroundSamplingThread">BackgroundSamplingThread</string>
+    <string name="app_name">MobilityTool</string>
+    <string name="menu_settings">Settings</string>
+    <string name="app_notification_id">notification_id</string>
+    <string name="title_activity_umts_info">Umts Net Info</string>
+    <string name="title_activity_grid_db">DataBase List</string>
+    <string name="title_activity_list_wifi">Wifi Access Points List</string>
+    <string name="title_activity_real_list_monitor">Access Point List</string>
+    <string name="title_activity_real_cell_list_monitor">Neighbour Cell List</string>
+    <string name="title_activity_start_up">Mobility Nitlab</string>
+
+    <!-- MENU - MENU - MENU -->
+    <!-- TITLE -->
+    <string name="stringTitleStartService">Start Sampling</string>
+    <string name="stringStopServiceItem">Stop Sampling</string>
+    <string name="stringDeleteDatabaseContentItem">Del DB</string>
+    <string name="title_activity_menu">Nitlab Mobility Tool</string>
+    <string name="str_service_Title">Sampling Service</string>
+    <string name="str_title_googleMap">G Map</string>
+    <string name="str_title_info">Info</string>
+    <string name="str_title_GridDB">DB List</string>
+    <string name="title_Plot">Plot</string>
+    <string name="title_ExtractDB">DB->SD</string>
+    <string name="str_title_itemRealTimeList">Monitor List</string>
+	<string name="title_ConsoleMonitor">Console Monitor</string>
+	<string name="title_send_all_db_to_server">DB->SERVER</string>
+	
+    <!-- BUTTONS - BUTTONS - BUTTONS -->
+
+
+    <!-- PREFERENCES - PREFERENCES - PREFERENCES -->
+    <!-- CATEGORY -->
+    <string name="categoryTitleServer">Server Preferences</string>
+    <string name="categoryTitleSampling">Sampling Preferences</string>
+    <string name="categoryTitlePersonalInfo">Personal Info</string>
+
+    <!-- KEY -->
+    <string name="key_serverUploadProcess">serverUploadProcess</string>
+    <string name="key_samplingItem">samplingInterfacesInterval</string>
+    <string name="prefs_key_startAtBoot">StartAtBoot</string>
+    <string name="prefs_key_ChooseServer">ChooseServer</string>
+    <string name="prefs_key_PersonalInfoName">Name</string>
+    <string name="prefs_key_PersonalInfoSurname">Surname</string>
+    <string name="prefs_key_BooleanStoreIfGpsExists">GpsExistance</string>
+    <string name="key_upload">UploadChoice</string>
+    <string name="key_Plot">Plot</string>
+
+    <!-- DEFAULT VALUES -->
+    <string name="defaultvalueSampling">5000</string>
+    <string name="defaultvaluePushing">2</string>
+    <string name="defaultvalueServer">1</string>
+    <string name="defaultvaluePersonaInfoName">none</string>
+    <string name="defaultvaluePersonaInfoSurname">none</string>
+    <string name="defaultvalueUpload">2</string>
+
+    <!-- SUMMARY -->
+    <string name="samplingSummary">Enter the Sampling Time Interval.</string>
+    <string name="summaryServerUploadProcess">Choose Server Upload Process.</string>
+    <string name="summaryStartAtBoot">Should sampling start at boot?</string>
+    <string name="summaryChooseServer">Choose Server to connect to.</string>
+    <string name="summaryPersonalIfoName">Enter your name.</string>
+    <string name="summaryPersonalIfoSurname">Enter your Surname.</string>
+    <string name="summaryBooleanStoreIfGpsExists">Store measurements on absence of Gps</string>
+    <string name="summaryUpload">Choose interface for uploading.</string>
+
+    <!-- TITLE -->
+    <string name="title_samplingItem">Sampling Interval</string>
+    <string name="title_serverUploadProcess">Server Upload</string>
+    <string name="title_bootreceiver">Start Service At Boot</string>
+    <string name="title_chooseServer">Choose Server</string>
+    <string name="title_PersonalInfoName">Your name:</string>
+    <string name="title_PersonalInfoSurname">Your Surname:</string>
+    <string name="title_BooleanStoreIfGpsExists">Store mesurements?</string>
+    <string name="title_upload">Upload Interface</string>
+
+    <!-- IMAGES -->
+    <string name="gps_state_indicator">Gps State Indicator</string>
+    <string name="wifi_state_indicator">Wifi State Indicator</string>
+    <string name="gg_state_indicator">3G State Indicator</string>
+    <string name="phone_state_indicator">Phone State Indicator</string>
+    <string name="network_operator_indicator">Network Operator Indicator</string>
+    <string name="alert_dialog_line_divider">Line Dibider Icon</string>
+    <string name="server_state_indicator">OML Server Indication</string>
+	<string name="data_state_indicator">Netowrk Data State Indicator</string>
+	<string name="nitlab_info">Nitlab Info</string>
+    
+	<!-- ERROR REPORTING -->
+	<string name="error_reporting_message_hint">Mobility Monitor has crashed with unexpected error. Please help fixing this error by reporting back to nitlab.</string>
+    
+    <!-- EDIT TEXT CONTENT DESCRIPTION -->
+    <string name="gps_state_edit">Gps State Editor</string>
+    <string name="wifi_state_editor">Wifi State Editor</string>
+    <string name="gg_state_editor">3G State Editor</string>
+    <string name="phone_state_editor">Phone State Editor</string>
+    <string name="network_operator_editor">Network Operator Editor</string>
+
+    <!-- TEXTVIEW STRINGS -->
+    <string name="txt_line_chart_filter">Chart Filter</string>
+	<string name="txt_unable_to_load_chart">Unable to Load Chart!</string>
+    
+    <!-- TEST STRINGS -->
+    <string name="test_string">gps:indication</string>
+
+    <!-- OTHERS -->
+    <string name="intent_extras_name_bootReceiver">BootReceiver</string>
+
+    <!-- ARRAYS -->
+    <!-- SERVERS -->
+    <string-array name="servers">
+        <item>none</item>
+        <item>NitLab Server</item>
+    </string-array>
+    <string-array name="serversValues">
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+
+    <!-- WAY TO UPLOAD DATA -->
+    <string-array name="Upload">
+        <item>ONLY through wifi</item>
+        <item>Any available interface</item>
+    </string-array>
+    <string-array name="UploadValues">
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    
+    <!-- TIME TO UPLOAD DATA -->
+    <string-array name="UploadTime">
+        <item>Push on Sampling</item>
+        <item>Push on Exit</item>
+    </string-array>
+    <string-array name="UploadTimeValues">
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+
+    
+
+</resources>

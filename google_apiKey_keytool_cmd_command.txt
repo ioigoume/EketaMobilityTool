@@ -1,0 +1,8 @@
+keytool -list -v -alias androiddebug key -keystore "C:\Documents and Settings\menios junior\.android\debug.keystore" -storepass android -keypass android
+keytool -list -v -alias _custom_androiddebug_ key -keystore "C:\Documents and Settings\menios junior\.android\_custom_key_" -storepass password -keypass password
+
+Copy the MD5 code that will be generated. 
+Paste the code to the following page:
+https://developers.google.com/maps/documentation/android/v1/maps-api-signup
+
+Google will generate the certificate you need. Copy it and put it in your xml layout.

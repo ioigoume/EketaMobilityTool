@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.maps.MapView xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mapview"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:apiKey="0QsAw9U2KM9T5WEi7DFeHV4ev8SvIn_3MPGub1Q"
+    android:enabled="true"
+    android:clickable="true" />
+
+<!-- android:apiKey="05Wbys5g126GIJpLveYLn2_hG1C-36hieOZm-xw"  -->
+
+<!-- Debug Key Windows-->
+<!-- For debug.keystore -->
+<!-- android:apiKey="0QsAw9U2KM9T5WEi7DFeHV4ev8SvIn_3MPGub1Q" -->
+
+<!-- Release key - Windows -->
+<!-- For debug.keystore2 -->
+<!-- android:apiKey="05Wbys5g126FNc3LxaMTZqfNu8Io36dtiZOapxA" -->
+
+<!-- File Path -->
+<!-- C:\Documents and Settings\menios junior\.android\ -->

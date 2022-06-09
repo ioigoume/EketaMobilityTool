@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lint>
+    <issue id="InefficientWeight">
+        <ignore path="res\layout\activity_chart.xml" />
+    </issue>
+    <issue id="UseValueOf">
+        <ignore path="src\com\ioigoume\eketamobilitytool\plot\ChartActivity.java" />
+    </issue>
+</lint>

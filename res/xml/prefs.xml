@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+    
+    <PreferenceCategory android:title="@string/categoryTitlePersonalInfo" >
+        <EditTextPreference
+            android:defaultValue="@string/defaultvaluePersonaInfoName"
+            android:key="@string/prefs_key_PersonalInfoName"
+            android:summary="@string/summaryPersonalIfoName"
+            android:title="@string/title_PersonalInfoName" />
+
+        <EditTextPreference
+            android:defaultValue="@string/defaultvaluePersonaInfoSurname"
+            android:key="@string/prefs_key_PersonalInfoSurname"
+            android:summary="@string/summaryPersonalIfoSurname"
+            android:title="@string/title_PersonalInfoSurname" />
+        
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="@string/categoryTitleSampling" >
+        <EditTextPreference
+            android:defaultValue="@string/defaultvalueSampling"
+            android:key="@string/key_samplingItem"
+            android:summary="@string/samplingSummary"
+            android:title="@string/title_samplingItem" />
+
+        <CheckBoxPreference
+            android:key="@string/prefs_key_startAtBoot"
+            android:summary="@string/summaryStartAtBoot"
+            android:title="@string/title_bootreceiver" />
+        
+        <CheckBoxPreference
+            android:key="@string/prefs_key_BooleanStoreIfGpsExists"
+            android:summary="@string/summaryBooleanStoreIfGpsExists"
+            android:title="@string/title_BooleanStoreIfGpsExists" />
+    </PreferenceCategory>
+    
+    <PreferenceCategory android:title="@string/categoryTitleServer" >
+       <ListPreference
+            android:defaultValue="@string/defaultvalueServer"
+            android:entries="@array/servers"
+            android:entryValues="@array/serversValues"
+            android:key="@string/prefs_key_ChooseServer"
+            android:summary="@string/summaryChooseServer"
+            android:title="@string/title_chooseServer" />
+       
+       <ListPreference
+            android:defaultValue="@string/defaultvalueUpload"
+            android:entries="@array/Upload"
+            android:entryValues="@array/UploadValues"
+            android:key="@string/key_upload"
+            android:summary="@string/summaryUpload"
+            android:title="@string/title_upload" />
+       
+        <ListPreference
+            android:defaultValue="@string/defaultvaluePushing"
+            android:entries="@array/UploadTime"
+            android:entryValues="@array/UploadTimeValues"
+            android:key="@string/key_serverUploadProcess"
+            android:summary="@string/summaryServerUploadProcess"
+            android:title="@string/title_serverUploadProcess" />
+        
+        
+    </PreferenceCategory>
+
+</PreferenceScreen>

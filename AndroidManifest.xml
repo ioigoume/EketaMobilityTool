@@ -1,0 +1,150 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ioigoume.eketamobilitytool"
+    android:installLocation="preferExternal"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:maxSdkVersion="17"
+        android:minSdkVersion="9"
+        android:targetSdkVersion="11" />
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_UPDATES" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.CONTROL_LOCATION_UPDATES" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION" />
+    <uses-permission android:name="android.permission.INSTALL_LOCATION_PROVIDER" />
+
+    <!-- PERMISSIONS NEEDED TO HAVE ACCES IN INNER CLASSES -->
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION" />
+
+    <!-- Not all android devices provide Wi-Fi functionality. If your application uses -->
+    <!-- declare so in manifest file -->
+    <uses-feature android:name="android.hardware.wifi" />
+
+    <application
+        android:name=".MobilityToolApplication"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <uses-library android:name="com.google.android.maps" />
+        
+        <!-- SERVICES -->
+
+        <service
+            android:name=".BackgroundService"
+            android:label="@string/title_Service_String" />
+        
+        <service
+    		android:name="de.quist.app.errorreporter.ExceptionReportService"
+    		android:process=":exceptionReporter"/>
+        
+        <service 
+            android:name=".AsyncOmlTextProtocolPushsService"
+            android:process=":omlSender"/>
+
+        <!-- ACTIVITIES -->
+        
+        <activity
+    		android:name="de.quist.app.errorreporter.ExceptionReportActivity"
+    		android:process=":exceptionReporter"
+    		android:theme="@android:style/Theme.NoDisplay"/> 
+        
+        <activity
+            android:name=".AboutActivity"
+            android:label="@string/title_activity_about" />
+        
+        <activity
+            android:name=".MapViewActivity"
+            android:label="@string/title_activity_map_view"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        
+        <activity
+            android:name=".PrefsActivity"
+            android:label="@string/title_activity_Preference"
+            android:theme="@style/PrefsTheme" />
+        
+        <activity
+            android:name=".ToastActivity"
+            android:label="@string/title_activity_toast" />
+        
+        <activity
+            android:name=".ListClass"
+            android:label="@string/title_activity_listclass"
+            android:theme="@style/DBListTheme" />
+        
+        <activity
+            android:name=".UmtsInfo"
+            android:label="@string/title_activity_umts_info" />
+        
+        <activity android:name="org.achartengine.GraphicalActivity" />
+
+        <activity
+            android:name=".ChartActivityLayout"
+            android:label="@string/title_activity_chart"
+            android:screenOrientation="landscape" />
+        
+        <activity
+            android:name=".RealTimeListViewWifiMonitor"
+            android:label="@string/title_activity_real_list_monitor" />
+        
+        <activity
+            android:name=".RealTimeListViewMonitorNeighbourCell"
+            android:label="@string/title_activity_real_cell_list_monitor" />
+        
+        
+        <activity
+            android:name=".StartUpActivity"
+            android:label="@string/title_activity_start_up"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name=".ConsoleMonitorActivity"
+            android:label="@string/title_ConsoleMonitor"
+            android:screenOrientation="portrait" />
+        
+        <!-- META DATA -->
+        
+        <meta-data
+    		android:name="de.quist.app.errorreporter.targetUrl"
+    		android:value="http://nitlab.inf.uth.gr/crash_report.php" />
+        
+        <meta-data
+    		android:name="de.quist.app.errorreporter.dialogMessageHint"
+    		android:resource="@string/error_reporting_message_hint"/>
+        
+        <meata-data
+            android:name="de.quist.app.errorreporter.extraCurrentRetryCount"
+    		android:value="51"/>
+        
+        
+        <!--  BROADCAST RECEIVER -->
+        
+        <receiver android:name=".BootReceiver" 
+            	  android:exported="false">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+        
+    </application>
+
+</manifest>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <!--   <com.ioigoume.eketamobilitytool.opengl.GLView -->
+    <!--   android:layout_width="fill_parent" -->
+    <!--   android:layout_height="fill_parent" /> -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center_vertical"
+        android:background="@android:color/black"
+        android:baselineAligned="false"
+        android:orientation="vertical"
+        android:padding="30dip" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|center"
+            android:layout_marginBottom="15dip"
+            android:layout_weight="0"
+            android:background="@drawable/back_textviewinfo"
+            android:gravity="center"
+            android:padding="@dimen/padding_small"
+            android:text="@string/title_app_str"
+            android:textColor="@color/lightBlue"
+            android:textSize="24.5sp" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/padding_medium"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textViewInfoscreen"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_gravity="top"
+                android:background="@drawable/back"
+                android:padding="@dimen/padding_medium"
+                android:textColor="@color/black" />
+        </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>
